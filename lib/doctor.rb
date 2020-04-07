@@ -19,10 +19,12 @@ class Doctor
   def appointments
     Appointment.all.select do |appt|
       appt.doctor
+    end
   end
   
   def patients
     appointments.map do |appt|
       appt.patient
   end
+end
 end
