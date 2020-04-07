@@ -5,7 +5,7 @@ class Doctor
   
   def initialize(name)
     @name= name
-    @@all << save
+    @@all << self
   end
   
   def self.all
@@ -25,6 +25,6 @@ class Doctor
   def patients
     appointments.map do |appt|
       appt.patient
+   end
   end
-end
 end
