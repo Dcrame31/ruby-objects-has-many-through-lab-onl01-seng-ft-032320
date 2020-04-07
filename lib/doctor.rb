@@ -23,6 +23,6 @@ class Doctor
   end
   
   def patients
-    self.appointments.collect {|appointment| appointment.patient}.uniq
+    self.appointments.collect {|appointment| appointment.patient}
   end
 end
